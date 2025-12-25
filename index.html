@@ -1,65 +1,46 @@
-
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KazAI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              'brand-primary': '#F97316', // Vibrant Orange
-              'brand-secondary': '#FB923C',
-              'dark-bg': '#000000', // Pure Black
-              'dark-card': '#0A0A0A', // Deep Gray for cards
-              'light-bg': '#F8FAFC',
-              'light-card': '#FFFFFF',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-            },
-          }
-        }
-      }
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0"
-  }
-}
-</script>
-<style>
-  body {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  body::-webkit-scrollbar {
-    display: none;
-  }
-  .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KazA1 AI Informator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      max-width: 600px;
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-  <body class="antialiased selection:bg-brand-primary selection:text-white bg-light-bg dark:bg-dark-bg">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body>
+  <div class="box">
+    <h1>KazA1 AI Informator</h1>
+    <p>
+      AI-проект для информирования и помощи пользователям.  
+      Создан на базе Google AI Studio.
+    </p>
+    <a href="https://miko87631.github.io/Kaz-AI/" target="_blank">
+      Попробовать AI
+    </a>
+  </div>
+</body>
 </html>
